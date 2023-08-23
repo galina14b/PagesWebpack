@@ -1,0 +1,240 @@
+.words {
+  background-color: #fff;
+
+  &__content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 130px 90px 150px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    width: 30%;
+  }
+
+  &__title {
+    margin: 0 0 59px;
+    position: relative;
+    text-align: left;
+  }
+
+  &__text {
+    margin: 0 0 22px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34px;
+    color: #969AA0;
+  }
+
+  &__rating {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: $second-color;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  &__balls {
+    margin-bottom: 10px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: $second-color;
+    display: flex;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  &__ball {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: $main-color;
+    display: inline-block;
+    border: 1px $main-color solid;
+
+    &:last-of-type {
+      background: linear-gradient(to right, $main-color 50%, transparent 50%);
+      margin-right: 10px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 802px;
+  }
+}
+
+.grid {
+
+  &__item {
+    background-color: $second-color;
+    width: 381px;
+  }
+
+  &__content {
+    padding: 30px 35px 24px 35px;
+  }
+}
+
+.author {
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__foto {
+    margin-right: 20px;
+  }
+
+  &__name {
+
+    & h6 {
+      margin: 0 0 15px;
+      color: $third-color;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      font-family: $secondary-font;
+    }
+  }
+
+  &__balls {
+    margin-bottom: 15px;
+  }
+
+  &__ball {
+    width: 12.67px;
+    height: 12.67px;
+    border-radius: 12.67px;
+    background-color: $main-color;
+    display: inline-block;
+    border: 1px $main-color solid;
+
+  }
+
+  &__quote {
+    margin-bottom: 13px;
+    font-family: $secondary-font;
+    color: $third-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &__text {
+    font-family: $primary-font;
+    color: $fourth-color;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    max-width: 290px;
+  }
+}
+
+.ball_half {
+  background: linear-gradient(to right, $main-color 50%, transparent 50%);
+  margin-right: 10px;
+}
+
+.ball_empty {
+  background: transparent;
+}
+
+.item-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.item-2 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.item-3 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+// Breakpoints ============================
+
+@media all and (max-width: 1360px) {
+  .words__info {
+    width: 50%;
+  }
+
+  .words__grid {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .grid__item {
+    margin: 20px 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .words__content {
+    display: block;
+    padding: 130px 20px 150px;
+  }
+
+  .words__info,
+  .words__grid,
+  .grid__item {
+    width: 100%;
+  }
+
+  .author__text {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 455px) {
+  .words__content {
+    text-align: center;
+  }
+
+  .words__title {
+    text-align: center;
+  }
+
+  .words__balls {
+    width: fit-content;
+    margin: 0 auto 10px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .grid__content {
+    padding: 30px 20px 24px;
+  }
+
+  .author__quote,
+  .author__text {
+    text-align: center;
+  }
+}

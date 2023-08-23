@@ -1,0 +1,108 @@
+.orderForm {
+  background-color: $second-color;
+  overflow: hidden;
+  opacity: 0;
+  height: fit-content;
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 210px);
+  z-index: 12;
+  color: $third-color;
+
+  &__wrapper {
+    margin: 20px;
+    border: 2px solid $third-color;
+  }
+
+  &__cross {
+    left: 90%;
+    top: 20px;
+  }
+
+  &__title {
+    margin: 50px 0;
+    text-align: center;
+    font-family: $primary-font;
+  }
+
+  &__form {
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 20px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    color: $main-color;
+  }
+
+  &__input {
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $third-color;
+    color: $third-color;
+    outline: none;
+  }
+
+  &__btn {
+    font-size: 20px;
+    margin: 20px auto 0;
+    width: 220px;
+    color: $third-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.cross {
+  display: inline-block;
+  position: relative;
+  color: $main-color;
+  
+    &:hover {
+      cursor: pointer;
+      color: $third-color;
+      transition: 0.7s;
+    }
+}
+
+@keyframes animShowModal {
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 0.9;
+    width: 420px;
+  }
+}
+
+.showModal {
+  animation: animShowModal 0.7s linear forwards;
+}
+
+// Breakpoints ======================
+
+@media all and (max-width: 630px) {
+
+  @keyframes anim {
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+
+    100% {
+      opacity: 0.9;
+      width: 90%;
+    }
+  }
+}

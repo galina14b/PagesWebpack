@@ -1,0 +1,73 @@
+.arrowUp {
+  position: fixed;
+  z-index: 10;
+  right: 30px;
+  top: 80%;
+  width: 80px;
+  height: 80px;
+  background-color: $second-color;
+  overflow: hidden;
+  opacity: 0;
+
+  &__element {
+    position: relative;
+    left: 33%;
+    top: 25%;
+
+    &::before {
+      @include colorElement;
+      width: 3px;
+      height: 30px;
+      transform: rotate(40deg);
+    }
+
+    &::after {
+      @include colorElement;
+      position: relative;
+      left: 15px;
+      width: 3px;
+      height: 30px;
+      transform: rotate(-40deg);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .arrowUp__element {
+    
+      @keyframes jumpInfinite {
+        0% {
+          top: 20%;
+        }
+  
+        50% {
+          top: 28%;
+        }
+  
+        100% {
+          top: 20%;
+        }
+      }
+  
+      animation: jumpInfinite 1s infinite;
+  
+    }
+  }
+}
+
+@keyframes animShowArrow {
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 0.9;
+    width: 80px;
+  }
+}
+
+.showArrow {
+  animation: animShowArrow 0.7s linear forwards;
+}

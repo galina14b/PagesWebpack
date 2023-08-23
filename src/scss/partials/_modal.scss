@@ -1,0 +1,47 @@
+.modal {
+  height: fit-content;
+  overflow: hidden;
+  background-color: $second-color;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 10;
+  opacity: 0;
+  font-family: $primary-font;
+  color: $third-color;
+
+  &__wrapper {
+    margin: 40px;
+    text-align: center;
+  }
+
+  &__cross {
+    left: 50%;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    width: 220px;
+    margin: 0 auto;
+    
+    & a {
+      font-family: $primary-font;
+      color: $third-color;
+    }
+  }
+}
+
+// Breakpoints ========================
+
+@media all and (max-width: 630px) {
+  .modal {
+    &__btn {
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+  }
+}

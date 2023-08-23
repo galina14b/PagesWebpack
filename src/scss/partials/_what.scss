@@ -1,0 +1,168 @@
+.what {
+  background-color: $third-color;
+
+  &__content {
+    max-width: 1440px;
+    padding: 120px 70px 140px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 96px;
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__grid {
+    width: 50%;
+    margin-right: 70px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__img-block {
+    width: 50%;
+  }
+
+  &__img {
+
+    margin-left: auto;
+    max-width: 535px;
+    position: relative;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      display: block;
+      border: 10px solid $main-color;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 5%;
+      left: 5%;
+    }
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+.what-grid {
+
+  &__item {
+    width: 303px;
+    height: 272px;
+    background-color: #F4F8FF;
+  }
+
+  &__inner {
+    padding: 30px 0 0 30px;
+    max-width: 260px;
+  }
+
+  &__number {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: $main-color;
+    color: $second-color;
+    margin-bottom: 30px;
+    position: relative;
+
+    & p {
+      display: inline-block;
+      position: absolute;
+      top: 8px;
+      left: 13px;
+      margin: 0;
+      font-family: $secondary-font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 29px;
+      color: $second-color;
+    }
+  }
+
+  &__text {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: $second-color;
+  }
+}
+
+// Breakpoints ============================
+
+@media all and (max-width: 1285px) {
+  .what__grid {
+    width: 60%;
+  }
+
+  .what__img-block {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 1120px) {
+  .what__info {
+    flex-direction: column-reverse;
+  }
+
+  .what__grid {
+    width: 100%;
+    margin: 100px 0 0;
+  }
+
+  .what__img-block {
+    width: 95%;
+  }
+
+  .what__grid .what-grid__item {
+    width: 100%;
+  }
+
+  .what__grid .what-grid__inner {
+    max-width: 95%;
+  }
+
+  .what__img {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .what__content {
+    padding: 120px 50px 140px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .what__content {
+    padding: 120px 20px 140px;
+  }
+}
+
+@media all and (max-width: 715px) {
+  .what__grid {
+    display: block;
+  }
+
+  .what__grid .what-grid__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
