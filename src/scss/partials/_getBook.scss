@@ -52,17 +52,17 @@
   background-color: transparent;
   position: relative;
   display: block;
-    padding: 19px 51px 18px;
-    text-decoration: none;
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 28px;
-    letter-spacing: 0.38px;
-    color: $third-color;
-    outline: none;
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  padding: 19px 51px 18px;
+  text-decoration: none;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.38px;
+  color: $third-color;
+  outline: none;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
 
   &:hover {
     cursor: pointer;

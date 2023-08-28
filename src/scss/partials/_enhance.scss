@@ -64,15 +64,15 @@
     max-width: 330px;
     margin: 0 auto;
     display: block;
+  }
 
-    & a {
-      letter-spacing: 0.19px;
-      color: $second-color;
-
-      &:hover {
-        color: $main-color;
-        transition: 0.7s;
-      }
+  &__contactLink {
+    letter-spacing: 0.19px;
+    color: $second-color;
+ 
+    &:hover {
+      color: $main-color;
+      transition: 0.7s;
     }
   }
 }
