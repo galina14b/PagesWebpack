@@ -1,5 +1,7 @@
 .getBest {
   background-color: $third-color;
+  overflow: hidden;
+  width: 100vw;
 
   &__wrapper {
     padding: 120px 70px;

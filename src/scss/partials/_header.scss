@@ -1,6 +1,7 @@
 .header {
   background-color: $second-color;
-  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
 
   &__content {
     max-width: 1440px;
@@ -338,7 +339,7 @@
   }
 
   .header__btn {
-    width: 177px;
+    width: fit-content;
 
     & a {
       padding: 19px 30px;
@@ -355,6 +356,7 @@
 @media all and (max-width: 768px) {
   .header__nav {
     position: absolute;
+    height: 100vh;
     width: 100%;
     background-color: $second-color;
     left: 0;
@@ -386,8 +388,8 @@
     width: 100%;
   }
 
-  .list__item {
-    padding: 30px 10px;
+  .list__item_btn .btn_orange {
+    margin-top: 30px;
   }
 
   .list__item_cart {

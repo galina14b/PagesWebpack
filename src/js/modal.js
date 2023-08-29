@@ -1,14 +1,3 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-    });
-});
-
 const modal = document.querySelector('.modal')
 window.addEventListener('scroll', function () {
 	const height = document.documentElement.scrollTop

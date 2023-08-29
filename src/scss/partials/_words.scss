@@ -1,5 +1,7 @@
 .words {
   background-color: #fff;
+  overflow: hidden;
+  width: 100vw;
 
   &__content {
     max-width: 1440px;

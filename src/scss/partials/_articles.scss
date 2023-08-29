@@ -3,6 +3,8 @@
 
 .articles {
   background-color: $fourth-color;
+  overflow: hidden;
+  width: 100vw;
 
   &__content {
     max-width: 1440px;
@@ -20,6 +22,7 @@
 }
 
 .slider {
+  width: 1440px;
 
   &__item {
     width: 420px;
@@ -108,9 +111,22 @@
   background-image: url(../images/partials/articles/slider-03.png)
 }
 
+.glide__slides {
+  justify-content: space-between;
+  width: 99%;
+}
+
 .glide__arrow {
   background-color: $second-color;
   top: 40%;
+}
+
+.glide__arrow--right {
+  right: 5rem;
+}
+
+.glide__arrow--left {
+  left: 5rem;
 }
 
 // Breakpoints ============================

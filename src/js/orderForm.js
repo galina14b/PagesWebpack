@@ -4,10 +4,10 @@ const crossForm = document.querySelector('.orderForm__cross');
 
 formOpeningBtn.forEach(btn => {
   btn.addEventListener('click', function () {
-    orderFormElement.classList.add('showModal');
+    orderFormElement.classList.add('showForm');
   })
 })
 
 crossForm.addEventListener('click', function () {
-  orderFormElement.classList.remove('showModal');
+  orderFormElement.classList.remove('showForm');
 })

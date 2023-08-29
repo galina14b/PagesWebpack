@@ -5,7 +5,7 @@
   height: fit-content;
   position: fixed;
   top: 10%;
-  left: calc(50% - 210px);
+  left: -100%;
   z-index: 12;
   color: $third-color;
 
@@ -74,20 +74,22 @@
     }
 }
 
-@keyframes animShowModal {
+@keyframes animShowForm {
+  
   50% {
     opacity: 0;
     width: 0;
   }
 
   100% {
+    left: calc(50% - 210px);
     opacity: 0.98;
     width: 420px;
   }
 }
 
-.showModal {
-  animation: animShowModal 0.7s linear forwards;
+.showForm {
+  animation: animShowForm 1s linear forwards;
 }
 
 // Breakpoints ======================
