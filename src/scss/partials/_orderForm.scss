@@ -94,9 +94,9 @@
 
 // Breakpoints ======================
 
-@media all and (max-width: 630px) {
+@media all and (max-width: 425px) {
 
-  @keyframes anim {
+  @keyframes animShowForm {
     50% {
       opacity: 0;
       width: 0;
@@ -105,6 +105,7 @@
     100% {
       opacity: 0.9;
       width: 90%;
+      left: 0;
     }
   }
 }

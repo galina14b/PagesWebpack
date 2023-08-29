@@ -1,5 +1,9 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
+body {
+  overflow-x: hidden
+}
+
 //Fonts:
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
 $primary-font: 'Inter', sans-serif;

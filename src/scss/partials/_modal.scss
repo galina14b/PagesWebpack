@@ -11,7 +11,7 @@
   color: $third-color;
 
   &__wrapper {
-    margin: 20px 40px 40px;
+    padding: 20px 40px 40px;
     text-align: center;
   }
 
@@ -63,4 +63,19 @@
       right: 0;
     }
   }
+
+  @keyframes animShowModal {
+  
+      50% {
+        opacity: 0;
+        width: 0;
+      }
+  
+      100% {
+        opacity: 0.98;
+        width: 90%;
+        right: 0;
+      }
+  }
+  
 }
