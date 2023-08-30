@@ -283,6 +283,7 @@
   border: 2px solid $main-color;
   width: 222px;
   font-family: $secondary-font;
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -429,6 +430,10 @@
   .header__nav {
     top: 99.4px;
   }
+}
+
+.btn_orange {
+  padding: 19px 35px;
 }
 
 @media all and (max-width: 375px) {

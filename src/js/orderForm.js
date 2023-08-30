@@ -1,13 +1,17 @@
 const orderFormElement = document.querySelector('.orderForm');
-const formOpeningBtn = document.querySelectorAll('.formOpeningBtn');
+const openingFormBtn = document.querySelectorAll('.formOpeningBtn');
 const crossForm = document.querySelector('.orderForm__cross');
+const darkBackground = document.querySelector('.dark-background');
+const openingBackground = document.querySelector('.showDarkBackground');
 
-formOpeningBtn.forEach(btn => {
+openingFormBtn.forEach(btn => {
   btn.addEventListener('click', function () {
     orderFormElement.classList.add('showForm');
+    darkBackground.classList.add('showDarkBackground');
   })
 })
 
 crossForm.addEventListener('click', function () {
   orderFormElement.classList.remove('showForm');
+  darkBackground.classList.remove('showDarkBackground');
 })
